@@ -3,7 +3,7 @@ var router=express.Router();
 var pass=require("./pass");
 var action=require("./action");
 
-router.get('/',[
+router.get('/index',[
   function(req,res,next){
     pass['get']['pre'](req,res,next);
   },

@@ -1,6 +1,6 @@
 var inital=function(req,res){
-  // res.render('./src/html/index.html');
-  res.send("ahahhah, there will be a cloud disk!");
+  res.render('index');
+  // res.send("ahahhah, there will be a cloud disk!");
 }
 module.exports={
   'inital':inital
