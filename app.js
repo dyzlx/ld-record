@@ -7,6 +7,8 @@ app.set('view engine','jade');
 
 app.use('/',require('./controllers/routes'));
 
+app.use('/static', express.static("./dist/static"));
+
 var server=app.listen(3030,function(){
   var host=server.address().address;
   var port=server.address().port;

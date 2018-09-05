@@ -3,8 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import A from './js/print.js'
 
 Vue.config.productionTip = false
+
+console.log(A.a)
 
 /* eslint-disable no-new */
 new Vue({
