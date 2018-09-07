@@ -1,8 +1,13 @@
 extends ./head.jade
 
+block css
+  link(rel="stylesheet",href="/static/css/app.css")
+
 block body
-  article.body
-    h1#h1 lalalla
+  #record
+      nav-model
+      handle-model
+
 block js
   script(src="/static/js/manifest.js")
   script(src="/static/js/vendor.js")

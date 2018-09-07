@@ -47,6 +47,11 @@ module.exports = {
         options: vueLoaderConfig
       },
       {
+        test: /\.scss$/,
+        loader:'style!css!sass',
+        exclude: '/node_modules/'
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
@@ -74,7 +79,11 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      }
+      },
+      {
+          test:/\.(ttf|eot|woff|woff2|svg)$/,
+          loader:'file-loader'//1.把你的资源移动到输出目录2.返回最终引入资源的url
+      },
     ]
   },
   node: {
@@ -88,5 +97,6 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
-  }
+  },
+  watch:true,
 }

@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import A from './js/print.js'
+import navModel from './components/navModel'
+import handleModel from './components/handleModel'
+import "./css/index.css"
+
 
 Vue.config.productionTip = false
 
@@ -11,8 +15,11 @@ console.log(A.a)
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
+  el: '#record',
   router,
-  components: { App },
-  template: '<App/>'
+  components: {
+    App,
+    navModel,
+    handleModel
+  },
 })
