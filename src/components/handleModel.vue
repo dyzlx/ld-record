@@ -50,17 +50,16 @@ export default {
       }
     }
     >div.handleRight{
-      display: inline-block;
       vertical-align: middle;
-      float:right;
-      width: 100%;
+      float: right;
+      margin-right: 50px;
       >input{
         outline: none;
         box-sizing: inherit;
         display: inline-block;
         height:30px;
         min-width: 60px;
-        width: 20%;
+        width: 200px;
         border: 1px solid #7EC0EE;
         border-radius: 5px;
         margin-right: 30px;
